@@ -360,25 +360,109 @@ a {
 		border-bottom: 1px solid black;
 	}
 
-	/* Entries */
-	.isotopeEntryWrapper {
-		width: 100%
+	/* ISOTOPE Entries */
+	.isotope {
+		border: 1px solid #DEDEDE;
+	}
+
+		/*clearfix*/
+		.isotope:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+	.portfolioEntries {
+		width: 100%;
 		max-width: 960px;
+		height: 2500px;
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
 	}
 
 	.portfolioEntry {
+		position: relative;
 		width: 100%;
 		max-width: 480px;
+		height: 100%;
+		max-height: 267px;
 		padding: 0;
 		margin: 0;
 		display: inline;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+		cursor: pointer;
+		text-align: center;
 	}
+
+		.portfolioEntry > * {
+			margin: 0;
+			padding: 0;
+		}
 
 	/*Portfolio Entries*/
 
 	.entryOne {
-		background-image: url(../img/portfolio_feature/BW_AVON_Feature.jpg);
-		position: fixed;
+		background-image: url(../img/portfolio_feature/bw/BW_AVON_Feature.jpg);
+	}
+
+	.entryTwo {
+		background-image: url(../img/portfolio_feature/bw/BW_IVI_Feature.jpg);
+	}
+
+	.entryThree {
+		background-image: url(../img/portfolio_feature/bw/BW_Dell_Feature.jpg);
+	}
+
+	.entryFour {
+		background-image: url(../img/portfolio_feature/bw/BW_HSBC_Direct_Mailer_Feature.jpg);
+	}
+
+	.entryFive {
+		background-image: url(../img/portfolio_feature/bw/BW_Hersheys_Kisses_Feature.jpg);
+	}
+
+	.entrySix {
+		background-image: url(../img/portfolio_feature/bw/BW_SM_Feature.jpg);
+	}
+
+	.entrySeven {
+		background-image: url(../img/portfolio_feature/bw/BW_Lee_Feature.jpg);
+	}
+
+	.entryEight {
+		background-image: url(../img/portfolio_feature/bw/BW_Stef_Gonzaga_Feature.jpg);
+	}
+
+	.entryNine {
+		background-image: url(../img/portfolio_feature/bw/BW_Bates_Feature.jpg);
+	}
+
+	.entryTen {
+		background-image: url(../img/portfolio_feature/bw/BW_CAVFI_Dundee_Feature.jpg);
+	}
+
+	.entryEleven {
+		background-image: url(../img/portfolio_feature/bw/BW_Yishion_Feature.jpg);
+	}
+
+	.entryTwelve {
+		background-image: url(../img/portfolio_feature/bw/BW_HSBC_Feature.jpg);
+	}
+
+	.entryThirteen {
+		background-image: url(../img/portfolio_feature/bw/BW_Unilab_Feature.jpg);
+	}
+
+	.entryFourteen {
+		background-image: url(../img/portfolio_feature/bw/BW_Wacoal_Feature.jpg);
+	}
+
+	.entryFifteen {
+		background-image: url(../img/portfolio_feature/bw/BW_UPSSAA_Feature.jpg);
 	}
 
 
