@@ -177,10 +177,11 @@ a {
 		position: relative;
 	}
 
-	.imgCarousel img {
+	.imgCarousel .heroCarousel img {
 		width: 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
+		position: relative;
 	}
 
 	/* Hero Section Arrow Nav */
@@ -356,13 +357,14 @@ a {
 		border-bottom: 1px solid black;
 	}
 
+	.is-checked,
 	.portfolio .subNavItem:active {
 		border-bottom: 1px solid black;
 	}
 
 	/* ISOTOPE Entries */
 	.isotope {
-		border: 1px solid #DEDEDE;
+		padding-bottom: 60px;
 	}
 
 		/*clearfix*/
@@ -396,6 +398,11 @@ a {
 		background-size: cover;
 		cursor: pointer;
 		text-align: center;
+		-o-transition: background .5s ease-in;
+  		-ms-transition: background .5s ease-in;
+  		-moz-transition: background .5s ease-in;
+  		-webkit-transition: background .5s ease-in;
+  		transition: background .5s ease-in;
 	}
 
 		.portfolioEntry > * {
@@ -408,61 +415,106 @@ a {
 	.entryOne {
 		background-image: url(../img/portfolio_feature/bw/BW_AVON_Feature.jpg);
 	}
+	.entryOne:hover {
+		background-image: url(../img/portfolio_feature/color/AVON_Feature.jpg);
+	}
 
 	.entryTwo {
 		background-image: url(../img/portfolio_feature/bw/BW_IVI_Feature.jpg);
+	}
+	.entryTwo:hover {
+		background-image: url(../img/portfolio_feature/color/IVI_Feature.jpg);
 	}
 
 	.entryThree {
 		background-image: url(../img/portfolio_feature/bw/BW_Dell_Feature.jpg);
 	}
+	.entryThree:hover {
+		background-image: url(../img/portfolio_feature/color/Dell_Feature.jpg);
+	}
 
 	.entryFour {
 		background-image: url(../img/portfolio_feature/bw/BW_HSBC_Direct_Mailer_Feature.jpg);
+	}
+	.entryFour:hover {
+		background-image: url(../img/portfolio_feature/color/HSBC_Direct_Mailer_Feature.jpg);
 	}
 
 	.entryFive {
 		background-image: url(../img/portfolio_feature/bw/BW_Hersheys_Kisses_Feature.jpg);
 	}
+	.entryFive:hover {
+		background-image: url(../img/portfolio_feature/color/Hersheys_Kisses_Feature.jpg);
+	}
 
 	.entrySix {
 		background-image: url(../img/portfolio_feature/bw/BW_SM_Feature.jpg);
+	}
+	.entrySix:hover {
+		background-image: url(../img/portfolio_feature/color/SM_Feature.jpg);
 	}
 
 	.entrySeven {
 		background-image: url(../img/portfolio_feature/bw/BW_Lee_Feature.jpg);
 	}
+	.entrySeven:hover {
+		background-image: url(../img/portfolio_feature/color/Lee_Feature.jpg);
+	}
 
 	.entryEight {
 		background-image: url(../img/portfolio_feature/bw/BW_Stef_Gonzaga_Feature.jpg);
+	}
+	.entryEight:hover {
+		background-image: url(../img/portfolio_feature/color/Stef_Gonzaga_Feature.jpg);
 	}
 
 	.entryNine {
 		background-image: url(../img/portfolio_feature/bw/BW_Bates_Feature.jpg);
 	}
+	.entryNine:hover {
+		background-image: url(../img/portfolio_feature/color/Bates_Feature.jpg);
+	}
 
 	.entryTen {
 		background-image: url(../img/portfolio_feature/bw/BW_CAVFI_Dundee_Feature.jpg);
+	}
+	.entryTen:hover {
+		background-image: url(../img/portfolio_feature/color/CAVFI_Dundee_Feature.jpg);
 	}
 
 	.entryEleven {
 		background-image: url(../img/portfolio_feature/bw/BW_Yishion_Feature.jpg);
 	}
+	.entryEleven:hover {
+		background-image: url(../img/portfolio_feature/color/Yishion_Feature.jpg);
+	}
 
 	.entryTwelve {
 		background-image: url(../img/portfolio_feature/bw/BW_HSBC_Feature.jpg);
+	}
+	.entryTwelve:hover {
+		background-image: url(../img/portfolio_feature/color/HSBC_Feature.jpg);
 	}
 
 	.entryThirteen {
 		background-image: url(../img/portfolio_feature/bw/BW_Unilab_Feature.jpg);
 	}
+	.entryThirteen:hover {
+		background-image: url(../img/portfolio_feature/color/Unilab_Feature.jpg);
+	}
 
 	.entryFourteen {
 		background-image: url(../img/portfolio_feature/bw/BW_Wacoal_Feature.jpg);
 	}
+	.entryFourteen:hover {
+		background-image: url(../img/portfolio_feature/color/Wacoal_Feature.jpg);
+	}
 
 	.entryFifteen {
 		background-image: url(../img/portfolio_feature/bw/BW_UPSSAA_Feature.jpg);
+	}
+	.entryFifteen:hover {
+		background-image: url(../img/portfolio_feature/color/UPSSAA_Feature.jpg);
 	}
 
 

@@ -23,6 +23,9 @@
 	<!-- Favicon -->
 	<link rel="shortcut icon" type="image/ico" href="img/Nera_favicon.ico">
 
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+
 	<!-- Google Fonts - Source Sans Pro - Light 300, Light 300 Italic, Normal 400, Normal 400 Italic, Semi-Bold 600, Semi-Bold 600 Italic, Bold 700, Bold 700 Italic -->
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
 
@@ -48,11 +51,18 @@
 					</ul>
 				</div>	
 			</nav>
-
 			<!-- Hero section containing portfolio image samples -->
 			<section>
 				<!-- Image carousel -->
 				<div class="imgCarousel" id="imgCarousel">
+
+					<!-- Carousel -->
+					<div class="heroCarousel">
+						<div><img src="img/Hero_Image_1.jpg"></div>
+						<div><img src="img/Hero_Image_2.jpg"></div>
+						<div><img src="img/Hero_Image_3.jpg"></div>
+						<div><img src="img/Hero_Image_4.jpg"></div>
+					</div>
 
 					<!-- Initial Navigation -->
 					<nav class="initialNav" id="initialNav">
@@ -62,17 +72,15 @@
 								<li class="initialMenuItem"><a href="#">About</a></li>
 								<li class="initialMenuItem"><a href="#">Portfolio</a></li>
 								<li class="initialMenuItem"><a href="#">Contact</a></li>
-								<li class="socialMediaIcons" id="linkedIn"><a href="https://www.linkedin.com/in/alexisnera"><img src="img/SocialMedia_LinkedIn_Icon.png" alt="Linkedin page link"></a></li>
-								<li class="socialMediaIcons"><a href="https://www.instagram.com/gijanelex/"><img src="img/SocialMedia_Instagram_Icon.png" alt="Instagram page link"></a></li>
-								<li class="socialMediaIcons"><a href="https://twitter.com/Lexy_Chase"><img src="img/SocialMedia_Twitter_Icon.png" alt="Twitter page link"></a></li>
+								<li class="socialMediaIcons" id="linkedIn"><a href="https://www.linkedin.com/in/alexisnera" target="_blank"><img src="img/SocialMedia_LinkedIn_Icon.png" alt="Linkedin page link" target=""></a></li>
+								<li class="socialMediaIcons"><a href="https://www.instagram.com/gijanelex/" target="_blank"><img src="img/SocialMedia_Instagram_Icon.png" alt="Instagram page link"></a></li>
+								<li class="socialMediaIcons"><a href="https://twitter.com/Lexy_Chase" target="_blank"><img src="img/SocialMedia_Twitter_Icon.png" alt="Twitter page link"></a></li>
 							</ul>
 						</div>
 					</nav>
-					<!-- Carousel placeholder - for now -->
-					<img src="img/Hero_Image_1.jpg">
-
+					
 					<!-- Carousel navigation arrows -->
-					<button class="arrow left">
+<!-- 					<button class="arrow left">
 						 <svg width="60px" height="83px">
 						    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
 						 </svg>  
@@ -81,7 +89,7 @@
 						 <svg width="60px" height="83px">
 						    <polyline fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "/>
 						 </svg>
-					</button>
+					</button> -->
 
 					<!-- SVG scroll down indicator arrow -->
 					<div>
@@ -103,15 +111,15 @@
 				<h2>Portfolio</h2>
 				<!-- Portfolio sub-navigation -->
 				<nav>
-					<ul>
-						<li><a href="#" class="subNavItem" id="subNavItemAll">All</a></li>
-						<li><a href="#" class="subNavItem" id="subNavItemAdvertising">Advertising</a></li>
-						<li><a href="#" class="subNavItem" id="subNavItemBranding">Branding</a></li>
-						<li><a href="#" class="subNavItem" id="subNavItemPackaging">Packaging</a></li>
-						<li><a href="#" class="subNavItem" id="subNavItemPublication">Publication</a></li>
-						<li><a href="#" class="subNavItem" id="subNavItemDigital">Digital</a></li>
-						<li><a href="#" class="subNavItem" id="subNavItemWeb">Web</a></li>
-						<li><a href="#" class="subNavItem" id="subNavItemOoh">OOH</a></li>
+					<ul class="button-group filters-button-group">
+						<li><a href="#" class="button is-checked subNavItem" id="subNavItemAll" data-filter="*">Show All</a></li>
+						<li><a href="#" class="button subNavItem" id="subNavItemAdvertising" data-filter=".advertising">Advertising</a></li>
+						<li><a href="#" class="button subNavItem" id="subNavItemBranding" data-filter=".branding">Branding</a></li>
+						<li><a href="#" class="button subNavItem" id="subNavItemPackaging" data-filter=".packaging">Packaging</a></li>
+						<li><a href="#" class="button subNavItem" id="subNavItemPublication" data-filter=".publication">Publication</a></li>
+						<li><a href="#" class="button subNavItem" id="subNavItemDigital" data-filter=".digital">Digital</a></li>
+						<li><a href="#" class="button subNavItem" id="subNavItemWeb" data-filter=".web">Web</a></li>
+						<li><a href="#" class="button subNavItem" id="subNavItemOoh" data-filter=".ooh">OOH</a></li>
 					</ul>
 					
 				</nav>
@@ -119,21 +127,21 @@
 			<!-- Portfolio entries -->
 			<div class="isotope">
 				<div class="portfolioEntries">
-					<div class="portfolioEntry entryOne" id="entryOne"></div>
-					<div class="portfolioEntry entryTwo" id="entryTwo"></div>
-					<div class="portfolioEntry entryThree" id="entryThree"></div>
-					<div class="portfolioEntry entryFour" id="entryFour"></div>
-					<div class="portfolioEntry entryFive" id="entryFive"></div>
-					<div class="portfolioEntry entrySix" id="entrySix"></div>
-					<div class="portfolioEntry entrySeven" id="entrySeven"></div>
-					<div class="portfolioEntry entryEight" id="entryEight"></div>
-					<div class="portfolioEntry entryNine" id="entryNine"></div>
-					<div class="portfolioEntry entryTen" id="entryTen"></div>
-					<div class="portfolioEntry entryEleven" id="entryEleven"></div>
-					<div class="portfolioEntry entryTwelve" id="entryTwelve"></div>
-					<div class="portfolioEntry entryThirteen" id="entryThirteen"></div>
-					<div class="portfolioEntry entryFourteen" id="entryFourteen"></div>
-					<div class="portfolioEntry entryFifteen" id="entryFifteen"></div>
+					<div class="portfolioEntry entryOne advertising" id="entryOne"></div>
+					<div class="portfolioEntry entryTwo advertising branding packaging publication digital web ooh" id="entryTwo"></div>
+					<div class="portfolioEntry entryThree advertising ooh" id="entryThree"></div>
+					<div class="portfolioEntry entryFour advertising packaging publication" id="entryFour"></div>
+					<div class="portfolioEntry entryFive advertising branding packaging" id="entryFive"></div>
+					<div class="portfolioEntry entrySix advertising branding ooh" id="entrySix"></div>
+					<div class="portfolioEntry entrySeven advertising web digital" id="entrySeven"></div>
+					<div class="portfolioEntry entryEight branding digital" id="entryEight"></div>
+					<div class="portfolioEntry entryNine web digital" id="entryNine"></div>
+					<div class="portfolioEntry entryTen branding packaging advertising publication" id="entryTen"></div>
+					<div class="portfolioEntry entryEleven advertising branding packaging publication digital ooh" id="entryEleven"></div>
+					<div class="portfolioEntry entryTwelve advertising ooh digital" id="entryTwelve"></div>
+					<div class="portfolioEntry entryThirteen advertising branding packaging web digital" id="entryThirteen"></div>
+					<div class="portfolioEntry entryFourteen advertising packaging" id="entryFourteen"></div>
+					<div class="portfolioEntry entryFifteen branding digital" id="entryFifteen"></div>
 				</div>
 			</div>
 			
@@ -265,10 +273,12 @@
 				</ul>
 			</div>
 		</footer>
+
 		
 		<!-- js sources -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
 		<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
 		<script src="js/index.js"></script>
 
