@@ -1,0 +1,521 @@
+/* Box Model Hack */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+/* Global */
+
+body {
+
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.mainSocialMediaIcons {
+	width: 28px;
+	height: 28px;
+	float: right;
+	display: inline;
+	padding: 7px 0px;
+	margin: 0px 4px;
+}
+
+.mainSocialMediaIcons:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+/* Header */
+
+	/* Main Nav */
+	.mainNav {
+		width: 100%;
+		background-color: #FFFFFF;
+		float: left;
+		padding: 5px 0px 15px 0;
+		position: fixed;
+		z-index: 2;
+	}
+
+	.mainNavWrapper {
+		width: 100%;
+		max-width: 1000px;
+		min-width: 768px;
+		margin: 0 auto;
+	}
+
+	.mainNavLogo {
+		width: 100%;
+		max-width: 200px;
+		margin-left: 20px;
+		float: left;
+		display: inline-block;
+	}
+
+	.mainNav ul {
+		padding: 0 0;
+	}
+
+	.mainMenuItem {
+		font-weight: 300;
+		font-size: 18px;
+		color: #000000;
+		padding: 10px 1.5%;
+		display: inline;
+		float: left;
+	}
+
+	.mainMenuItem a {
+		font-weight: 300;
+		font-size: 18px;
+		color: #000000;
+	}
+
+	.mainMenuItem:first-child {
+		margin-left: 3%;
+	}
+
+	#linkedIn {
+		margin-right: 20px;
+	}
+
+	/* Hamburger menu */
+
+	.hamburgerMenu {
+	  display: none;
+	}
+
+	.mobileMenu {
+	  display: none;
+	}
+
+	.mobileMenu ul li {
+	  display: none;
+	}
+
+	.mobileMenu ul li a {
+	  display: none;
+	}
+
+/* Portfolio Content */
+
+main {
+	display:block;
+}
+
+	main h1 {
+		width: 100%;
+		max-width: 1000px;
+		padding: 120px 0 30px 20px;
+		margin: 0 auto;
+		display: block;
+		color: #000;
+		font-size: 28px;
+		font-weight: 400;
+	}
+
+	/* TV Commercial Section - Youtube*/
+	.tvcWrapper {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.tvcWrapperInner {
+		width: 96%;
+		height:96%;
+		overflow: auto;
+		margin: 0 2%;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.tvc {
+		width: 100%;
+		border: 1px solid #DEDEDE;
+	}
+
+	iframe:focus {
+		outline: none;
+	}
+
+	iframe[seamless] {
+		display:block;
+	}
+
+	/* Portfolio Images */
+	.portfolioFull {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+
+	.portfolioFull img {
+		width: 96%;
+		margin: 0 2%;
+	}
+
+	/* Portfolio Description - Text Content*/
+	.portfolioDescriptionWrapper{
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.portfolioDescription {
+		max-width: 960px;
+		padding: 30px 0;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+	  	column-count: 3;
+	  	margin: 0 20px;
+	}
+
+	.portfolioDescription p {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.creditsWrapper {
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.creditsGroup {
+		width: 100%;
+		padding: 20px;
+		margin-bottom: 100px;
+	}
+
+	.creditsCol {
+		width: auto;
+		margin-top: 20px;
+		padding-right: 8%;
+		padding-left: 1.1%;
+		display: inline-block;
+		border-left: 3px solid #DEDEDE;
+		vertical-align: text-top;
+	}
+
+	.creditsCol:last-child {
+		padding-right: 0;
+	}
+
+	.creditsGroupInner {
+		margin-bottom: 10px;
+		float: left;
+	}
+
+	.creditsGroupInner p {
+		baseline-shift: top;
+		font-size: 15px;
+		font-weight: 300;
+		margin: 0;
+		color: #999;
+	}
+
+	.hide {
+		display: none;
+	}
+
+/* Footer */
+footer {
+	background-color: #e7e7e7;
+	border-top: 1px solid #000000;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	overflow: auto;
+}
+
+footer nav {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.footerNavWrap {
+	width: 100%;
+	max-width: 300px;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+.footerMenuItem {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 300;
+	text-decoration: none;
+	display: inline;
+	padding: 3% 5%;
+	margin-left: 1.8%;
+}
+
+.footerMenuItem a {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 300;
+	display: inline;
+	padding: 1% 1%;
+}
+
+.footerMenuItem a:hover {
+	color: #555;
+	text-decoration: none;
+}
+
+.footerLogo {
+	width: 100%;
+	max-width: 227px;
+	padding: 25px 0px;
+	margin: 0 auto;
+}
+
+.footerLogo img {
+	width: 100%;
+}
+
+footer .footerIconGroup {
+	width: 120px;
+	margin: 0 auto;
+}
+
+.footerIcons {
+	width: 28px;
+	height: 28px;
+	display: inline;
+	padding: 7px 0px;
+	margin: 0px 4px;
+}
+
+.footerIcons:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.copyright {
+	text-align: center;
+	color: #000;
+	padding: 40px 0 0 0;
+}
+
+
+
+
+
+
+/* RESPONSIVE - MOBILE & LAPTOP */
+
+/* 782px to 800px wide */
+@media screen and (min-width: 782px) and (max-width: 800px) {
+
+/*Portfolio Description - Text Content - Change to 2-column description*/
+
+	.portfolioDescription {
+		max-width: 800px;
+		padding: 30px 0;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+	  	column-count: 2;
+	  	margin: 0 20px;
+	}
+
+	.portfolioDescription p {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+}
+
+
+
+
+
+@media screen and (min-width: 645px) and (max-width: 781px) {
+
+/* Main Nav - Change minimum width to 530px */
+
+	.mainNavWrapper {
+		min-width: 530px;
+	}
+
+/*Portfolio Description - Text Content - Change to 2-column description*/
+
+	.portfolioDescription {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+	  	column-count: 2;
+	}
+
+	.portfolioDescription p {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 530px) and (max-width: 644px) {
+
+.mainNavWrapper {
+	min-width: 530px;
+}
+
+/* Adding larger margin to first menu item */
+.mainMenuItem:first-child {
+	margin-left: 8%;
+}
+
+/* Social Media icons on top disappear */
+.mainSocialMediaIcons {
+	display: none;
+}
+
+/*Portfolio Description - Text Content - Change to 2-column description*/
+
+	.portfolioDescription {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+	  	column-count: 2;
+	}
+
+	.portfolioDescription p {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+}
+
+
+
+
+
+@media screen and (max-width: 529px) {
+
+/* Set minimum width to 290px */
+.mainNavWrapper {
+	min-width: 290px;
+}
+
+/* Make main nav logo smaller */
+.mainNavLogo {
+	max-width: 185px;
+}
+
+/* Main menu items disappear*/
+.mainMenuItem {
+	display: none;
+}
+
+/* Hamburger menu appear*/
+
+.hamburger {
+  color: #000;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.hamburgerMenu {
+  float: right;
+  padding-right: 20px;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+  float: right;
+  display: inline;
+}
+
+.mobileMenu {
+  display: block;
+  position: fixed;
+  top: 75px;
+}
+
+.mobileMenu ul li {
+  float: right;
+  clear: both;
+  font-size: 17px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.mobileMenu ul li a {
+  display: block;
+  color: #000;
+}
+
+.mobileMenu ul li:last-child {
+  display: block;
+  border-bottom: 0px;
+}
+
+/* Social Media icons on top disappear */
+
+.mainSocialMediaIcons {
+	display: none;
+}
+
+/* Portfolio title font size smaller */
+	main h1 {
+		width: 100%;
+		max-width: 1000px;
+		padding: 120px 0 30px 20px;
+		margin: 0 auto;
+		display: block;
+		color: #000;
+		font-size: 23px;
+		font-weight: 400;
+	}
+
+/*Portfolio Description - Text Content - Change to 2-column description*/
+
+	.portfolioDescription {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+	  	column-count: 1;
+	}
+
+	.portfolioDescription p {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+}
+
+}
+
+
+

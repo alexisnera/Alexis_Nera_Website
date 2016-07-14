@@ -86,9 +86,10 @@ a {
 	.initialNavLogo {
 		width: 100%;
 		height: 100%;
-		max-width: 227px;
+		max-width: 200px;
 		max-height: 26.7px;
 		margin-left: 20px;
+		padding-top: 2px;
 		float: left;
 		display: inline-block;
 	}
@@ -122,8 +123,14 @@ a {
 		width: 100%;
 		background-color: #FFFFFF;
 		float: left;
-		padding: 20px 0px;
+		padding: 15px 0px 15px 0;
 		position: fixed;
+		z-index: 2;
+		-o-transition: background .5s ease-in;
+  		-ms-transition: background .5s ease-in;
+  		-moz-transition: background .5s ease-in;
+  		-webkit-transition: background .5s ease-in;
+  		transition: background .5s ease-in;
 	}
 
 	.mainNavWrapper {
@@ -135,7 +142,7 @@ a {
 
 	.mainNavLogo {
 		width: 100%;
-		max-width: 227px;
+		max-width: 200px;
 		margin-left: 20px;
 		float: left;
 		display: inline-block;
@@ -149,7 +156,7 @@ a {
 		font-weight: 300;
 		font-size: 18px;
 		color: #000000;
-		padding: 10px 1.5%;
+		padding: 14px 1.5%;
 		display: inline;
 		float: left;
 	}
@@ -245,21 +252,21 @@ a {
 		position: absolute;
 		left: 50%;
 		margin-left: -30px;
-		bottom: 20px;
+		bottom: 50px;
 	}
 
 	.arrowScrollDown path {
 		stroke: #FFFFFF;
 		fill: transparent;
 		stroke-width: 2px;	
-		animation: arrowDown 2s infinite;
-		-webkit-animation: arrowDown 2s infinite;
+		animation: arrowDown 7s infinite;
+		-webkit-animation: arrowDown 7s infinite;
 	}
 
 	@keyframes arrowDown
 	{
 	0% {opacity:0}
-	40% {opacity:1}
+	40% {opacity:0.7}
 	80% {opacity:0}
 	100% {opacity:0}
 	}
@@ -267,7 +274,7 @@ a {
 	@-webkit-keyframes arrowDown /*Safari and Chrome*/
 	{
 	0% {opacity:0}
-	40% {opacity:1}
+	40% {opacity:0.7}
 	80% {opacity:0}
 	100% {opacity:0}
 	}
@@ -290,7 +297,7 @@ a {
 /* Portfolio Section */
 .portfolio {
 	background-color: #e7e7e7;
-	padding: 40px 0px;
+	padding: 100px 0px;
 }
 
 .portfolioWrapper {
@@ -376,7 +383,7 @@ a {
 
 	.portfolioEntries {
 		width: 100%;
-		max-width: 960px;
+		max-width: 980px;
 		height: 2500px;
 		margin: 0 auto;
 		padding: 0;
@@ -418,12 +425,30 @@ a {
 	.entryOne:hover {
 		background-image: url(../img/portfolio_feature/color/AVON_Feature.jpg);
 	}
+	#entryOneA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
 
 	.entryTwo {
 		background-image: url(../img/portfolio_feature/bw/BW_IVI_Feature.jpg);
 	}
 	.entryTwo:hover {
 		background-image: url(../img/portfolio_feature/color/IVI_Feature.jpg);
+	}
+	#entryTwoA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
 	}
 
 	.entryThree {
@@ -432,12 +457,30 @@ a {
 	.entryThree:hover {
 		background-image: url(../img/portfolio_feature/color/Dell_Feature.jpg);
 	}
+	#entryThreeA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
 
 	.entryFour {
 		background-image: url(../img/portfolio_feature/bw/BW_HSBC_Direct_Mailer_Feature.jpg);
 	}
 	.entryFour:hover {
 		background-image: url(../img/portfolio_feature/color/HSBC_Direct_Mailer_Feature.jpg);
+	}
+	#entryFourA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
 	}
 
 	.entryFive {
@@ -446,12 +489,30 @@ a {
 	.entryFive:hover {
 		background-image: url(../img/portfolio_feature/color/Hersheys_Kisses_Feature.jpg);
 	}
+	#entryFiveA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
 
 	.entrySix {
 		background-image: url(../img/portfolio_feature/bw/BW_SM_Feature.jpg);
 	}
 	.entrySix:hover {
 		background-image: url(../img/portfolio_feature/color/SM_Feature.jpg);
+	}
+	#entrySixA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
 	}
 
 	.entrySeven {
@@ -460,12 +521,30 @@ a {
 	.entrySeven:hover {
 		background-image: url(../img/portfolio_feature/color/Lee_Feature.jpg);
 	}
+	#entrySevenA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
 
 	.entryEight {
 		background-image: url(../img/portfolio_feature/bw/BW_Stef_Gonzaga_Feature.jpg);
 	}
 	.entryEight:hover {
 		background-image: url(../img/portfolio_feature/color/Stef_Gonzaga_Feature.jpg);
+	}
+	#entryEightA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
 	}
 
 	.entryNine {
@@ -474,12 +553,30 @@ a {
 	.entryNine:hover {
 		background-image: url(../img/portfolio_feature/color/Bates_Feature.jpg);
 	}
+	#entryNineA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
 
 	.entryTen {
 		background-image: url(../img/portfolio_feature/bw/BW_CAVFI_Dundee_Feature.jpg);
 	}
 	.entryTen:hover {
 		background-image: url(../img/portfolio_feature/color/CAVFI_Dundee_Feature.jpg);
+	}
+	#entryTenA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
 	}
 
 	.entryEleven {
@@ -488,12 +585,30 @@ a {
 	.entryEleven:hover {
 		background-image: url(../img/portfolio_feature/color/Yishion_Feature.jpg);
 	}
+	#entryElevenA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
 
 	.entryTwelve {
 		background-image: url(../img/portfolio_feature/bw/BW_HSBC_Feature.jpg);
 	}
 	.entryTwelve:hover {
 		background-image: url(../img/portfolio_feature/color/HSBC_Feature.jpg);
+	}
+	#entryTwelveA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
 	}
 
 	.entryThirteen {
@@ -502,6 +617,15 @@ a {
 	.entryThirteen:hover {
 		background-image: url(../img/portfolio_feature/color/Unilab_Feature.jpg);
 	}
+	#entryThirteenA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
 
 	.entryFourteen {
 		background-image: url(../img/portfolio_feature/bw/BW_Wacoal_Feature.jpg);
@@ -509,12 +633,30 @@ a {
 	.entryFourteen:hover {
 		background-image: url(../img/portfolio_feature/color/Wacoal_Feature.jpg);
 	}
+	#entryFourteenA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
 
 	.entryFifteen {
 		background-image: url(../img/portfolio_feature/bw/BW_UPSSAA_Feature.jpg);
 	}
 	.entryFifteen:hover {
 		background-image: url(../img/portfolio_feature/color/UPSSAA_Feature.jpg);
+	}
+	#entryFifteenA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
 	}
 
 
@@ -561,7 +703,7 @@ a {
 		color: #FFFFFF;
 		font-weight: 300;
 		font-size: 35px;
-		padding: 30px 0px;
+		padding: 80px 0px 40px 0;
 		position: relative;
 		top: 30px;
 		margin: 0 20px;
@@ -626,7 +768,7 @@ a {
 /* Contact */
 .contact {
 	background-color: #e7e7e7;
-	padding: 30px 0px;
+	padding: 70px 0px;
 }
 
 .contactWrapper {
@@ -815,4 +957,8 @@ footer .footerIconGroup {
 	filter: alpha(opacity=80); /* For IE8 and earlier */
 }
 
-
+.copyright {
+	text-align: center;
+	color: #000;
+	padding: 40px 0 0 0;
+}
