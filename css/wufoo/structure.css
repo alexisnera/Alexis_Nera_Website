@@ -1,0 +1,16 @@
+
+form.wufoo{
+	margin: 20px 20px 0 20px;
+	padding: 0;
+	position: relative;
+}
+
+.hide,
+.cloak div,
+.cloak span,
+.likert.cloak tbody,
+.likert.cloak thead{
+	display:none !important
+}
+
+.likert.cloak table{border:none}

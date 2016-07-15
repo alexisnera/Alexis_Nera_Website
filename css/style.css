@@ -20,6 +20,7 @@
 body {
 
 	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	text-align: left;
 
 }
 
@@ -125,7 +126,7 @@ a {
 		float: left;
 		padding: 15px 0px 15px 0;
 		position: fixed;
-		z-index: 2;
+		z-index: 10000;
 		-o-transition: background .5s ease-in;
   		-ms-transition: background .5s ease-in;
   		-moz-transition: background .5s ease-in;
@@ -189,60 +190,6 @@ a {
 		background-size: cover;
 		background-repeat: no-repeat;
 		position: relative;
-	}
-
-	/* Hero Section Arrow Nav */
-	button {
-		-webkit-appearance: none;
-  		background: transparent;
-  		border: 0;
-		outline:0;
-	}
-
-	svg {
-	 	padding: 5px;
-	}
-
-	.arrow {
-	 	cursor: pointer;
-	 	position: absolute;
-	 	top: 50%;
-	 	margin-top: -45px;
-	 	margin-left: -35px;
-	 	width: 70px;
-		height: 90px;
-	}
-
-	.left {
-		left: 5%;
-	}
-
-	.right {
-		left: 95%;
-	}
-
-	.left:hover polyline,
-	.left:focus polyline {
-		stroke-width: 3;
-	}
-
-	.left:active polyline {
-		stroke-width: 6;
-		transition: all 100ms ease-in-out;
-	}
-
-	.right:hover polyline,
-	.right:focus polyline {
-		stroke-width: 3;
-	}
-
-	.right:active polyline {
-		stroke-width: 6;
-		transition: all 100ms ease-in-out;
-	}
-
-	polyline {
-		transition: all 250ms ease-in-out;
 	}
 
 	/* SVG scroll down indicator arrow */
@@ -726,35 +673,40 @@ a {
 
 	/* Accounts */
 	.aboutAccounts {
-		font-size: 50px;
 		padding-top: 0;
 		padding-bottom: 30px;
+	}
 
+	.aboutSubheadWrapper {
+		width: 100%;
+		max-width: 1000px;
+		min-width: 320px;
+		display: block;
+		margin: 0 auto;
 	}
 
 	.aboutSubHead {
+		width: 100%;
+		max-width: 960px;
 		font-size: 18px;
-		font-weight: 600px;
+		font-weight: 600;
 		letter-spacing: 1.5px;
 		border-top: 1px solid #DEDEDE;
 		padding-top: 20px;
+		margin-right: 20px;
 		margin-left: 20px;
-	}
-
-	.accountsTable {
-		width: 100%;
-		margin: 0 20px;
-	}
-
-	.accountsCol {
-		max-width: 320px;
 	}
 
 	.accountsList {
 		margin-top: 20px;
+		margin-right: 20px;
 		margin-bottom: 30px;
 		margin-left: 20px;
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+  		column-count: 3;
 		list-style-type: square;
+		list-style-position: inside;
 	}
 
 	.accountsList li {
@@ -762,8 +714,6 @@ a {
 		font-weight: 300;
 		line-height: 35px;
 	}
-
-	/* Competitions and Awards */
 
 /* Contact */
 .contact {
@@ -784,6 +734,7 @@ a {
 	padding-top: 30px;
 	padding-bottom: 40px;
 	margin-left: 20px;
+	text-align: left;
 }
 
 .contact h3 {
@@ -792,6 +743,7 @@ a {
 	font-size: 25px;
 	padding: 10px 0px;
 	margin: 0 auto;
+	text-align: left;
 }
 
 	/* Contact Info */
@@ -799,6 +751,7 @@ a {
 		max-width: 50%;
 		float: left;
 		margin-left: 20px;
+		text-align: left;
 	}
 
 	.contact p {
@@ -807,81 +760,21 @@ a {
 		line-height: 22px;
 		color: #000000;
 		padding: 5px 0px;
+		text-align: left;
 	}
 
 	/* Contact Form */
-	.contact form {
+	.wufooContactFormWrap {
 		width: 100%;
-		max-width: 480px;
+		max-width: 500px;
+		min-width: 320px;
+		margin: 0;
+		display: inline-block;
+		text-align: left;
 		float: right;
-		margin: 0 20px;
 	}
 
-	.contact form label {
-		font-size: 18px;
-		font-weight: 300;
-		color: #000000;
-		padding: 10px 0px;
-		display: block;
-	}
-
-	input.formField {
-		font-size: 15px;
-		width: 100%;
-		border: 0;
-		padding: 8px 8px;
-		border-radius: 2px;
-		margin-top: 5px;
-		margin-bottom: 10px;
-		outline: 0;
-	}
-
-	textarea.formField {
-		font-size: 15px;
-		width: 100%;
-		border: 0;
-		padding: 8px 8px;
-		border-radius: 2px;
-		margin-top: 5px;
-		margin-bottom: 10px;
-		outline: 0;
-	}
-
-	input.formMessage {
-		max-width: 480px;
-		display: block;
-	}
-
-	input.formNumberSum {
-		width: 50%;
-		display: block;
-	}
-
-	.noInput {
-		font-size: 15px;
-		font-weight: 300;
-		font-style: italic;
-		color: #9999FF;
-		padding-left: 20px;
-	}
 	
-	input.submitBtn {
-		font-size: 15px;
-		width: 50%;
-		letter-spacing: 2px;
-		color: #FFFFFF;
-		background-color: #000000;
-		border: none;
-		padding: 15px 30px;
-		margin-top: 20px;
-		margin-bottom: 30px;
-		outline: 0;
-		cursor: pointer;
-	}
-
-	input.submitBtn:active {
-		background-color: #222;
-	}
 
 /* Footer */
 footer {
@@ -962,3 +855,76 @@ footer .footerIconGroup {
 	color: #000;
 	padding: 40px 0 0 0;
 }
+
+
+
+
+
+
+/* RESPONSIVE - MOBILE & LAPTOP */
+
+/* 782px to 800px wide */
+@media screen and (min-width: 920px) and (max-width: 1057px) {
+
+/* Header */
+
+	/* Initial Nav - Adjusting min-width to 320px and max-width to 1057px */
+	.initialNavWrapper {
+		max-width: 1057px;
+		min-width: 320px;
+	}
+
+	/* Main Nav - Adjusting min-width to 320px and max-width to 1057px */
+	.mainNavWrapper {
+		max-width: 1055px;
+		min-width: 320px;
+	}
+
+	/* SVG scroll down indicator arrow moved to 5px from bottom */
+	.arrowScrollDown {
+		bottom: 5px;
+	}
+
+}
+
+/* 782px to 800px wide */
+@media screen and (min-width: 780px) and (max-width: 919px) {
+
+/* Header */
+
+	/* Initial Nav - Adjusting min-width to 320px and max-width to 1057px */
+	.initialNavWrapper {
+		max-width: 920px;
+		min-width: 320px;
+	}
+
+	/* Main Nav - Adjusting min-width to 320px and max-width to 1057px */
+	.mainNavWrapper {
+		max-width: 920px;
+		min-width: 320px;
+	}
+
+	/* SVG scroll down indicator arrow moved to 5px from bottom */
+	.arrowScrollDown {
+		display: none;
+	}
+
+/* ABOUT */
+
+	/* Description - Adjust to 2 columns */
+	.aboutDescription {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+  		column-count: 2;
+	}
+	/* Accounts - Adjust to 2 columns */
+
+	.accountsList {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+  		column-count: 2;
+	}
+
+}
+
+
