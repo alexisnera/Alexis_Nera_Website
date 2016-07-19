@@ -8,9 +8,22 @@
 	<meta property="og:site_name" content="ALEXIS NERA DESIGN">
 	<meta property="og:url" content="http://lexynera.com/">
 	<meta property="og:type" content="website">
+	<meta property="og:title" content="Alexis Nera Design">
 	<meta name="description" content="Graphic Design. Advertising. A creative professional with influence from the crazy colorful streets of Manila (Philippines) and the rich design and art scene of the US.">
+	<meta property="og:image" content="http://lexynera.com/img/Alexis_Nera.jpg">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="438"> 
 	<meta name="author" content="Alexis Nera">
 	<meta name="keywords" content="graphic design, advertising, branding, packaging, publication, digital, web, signage, out of home, billboards, posters, direct mailer, evite, brochure, tvc, logo, map, visual identity, user interface, food packaging, campaign, presentation slides">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:description" content="A creative professional with influence from the crazy colorful streets of Manila (Philippines) and the rich design and art scene of the US.">
+	<meta name="twitter:title" content="Alexis Nera Design">
+	<meta name="twitter:site" content="@Lexy_Chase">
+	<meta name="twitter:image" content="http://lexynera.com/img/Alexis_Nera.jpg">
+	<meta name="twitter:image:alt" content="Alexis Nera Design">
+	<meta name="twitter:creator" content="@Lexy_Chase">
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="canonical" href="http://lexynera.com/">
 	
 	<title>Alexis Nera Design</title>
@@ -38,7 +51,7 @@
 		<!-- Header section containing navigation -->
 		<header class="clearfix">
 			<!-- Main Navigation -->
-			<nav class="hide mainNav" id="mainNav">
+			<nav class="mainNav" id="mainNav">
 				<div class="mainNavWrapper" id="mainNavWrapper">
 					<div><a href="http://lexynera.com/"><img class="mainNavLogo" src="img/Aleixs_Nera_Logo_Tag.png" alt="Alexis Nera Design"></a></div>
 					<ul>
@@ -49,10 +62,21 @@
 						<li class="mainSocialMediaIcons"><a href="https://www.instagram.com/gijanelex/" target="_blank"><img src="img/SocialMedia_Instagram_Icon.png" alt="Instagram page link"></a></li>
 						<li class="mainSocialMediaIcons"><a href="https://twitter.com/Lexy_Chase" target="_blank"><img src="img/SocialMedia_Twitter_Icon.png" alt="Twitter page link"></a></li>
 					</ul>
-				</div>	
+				</div>
+				<span class="hamburger hamburgerMenu" id="menuTrigger">&#9776;</span>
+			</nav>
+			<nav class="mainNav mobileMenu">
+				<ul>
+					<li><a href="http://lexynera.com/#aboutme">About</a></li>
+					<li><a href="http://lexynera.com/#portfolio">Portfolio</a></li>
+					<li><a href="http://lexynera.com/#contact">Contact</a></li>
+					<li class="mobileSocialMediaIcons"><a href="https://www.linkedin.com/in/alexisnera" target="_blank"><img src="img/SocialMedia_LinkedIn_Icon.png" alt="Linkedin page link"></a><a href="https://www.instagram.com/gijanelex/" target="_blank"><img src="img/SocialMedia_Instagram_Icon.png" alt="Instagram page link"></a><a href="https://twitter.com/Lexy_Chase" target="_blank"><img src="img/SocialMedia_Twitter_Icon.png" alt="Twitter page link"></a></li>
+				</ul>
 			</nav>
 			<!-- Hero section containing portfolio image samples -->
 			<section>
+				<!-- Spacer to push all content down -->
+				<div class="topSpacer"></div>
 				<!-- Image carousel -->
 				<div class="imgCarousel" id="imgCarousel">
 
@@ -63,21 +87,6 @@
 						<div><img src="img/Hero_Image_3.jpg"></div>
 						<div><img src="img/Hero_Image_4.jpg"></div>
 					</div>
-
-					<!-- Initial Navigation -->
-					<nav class="initialNav" id="initialNav">
-						<div class="initialNavWrapper" id="initialNavWrapper">
-							<div><a href="http://lexynera.com/"><img class="initialNavLogo" src="img/Aleixs_Nera_Logo.png" alt="Alexis Nera Design"></a></div>
-							<ul>
-								<li class="initialMenuItem"><a href="#aboutme">About</a></li>
-								<li class="initialMenuItem"><a href="#portfolio">Portfolio</a></li>
-								<li class="initialMenuItem"><a href="#contact">Contact</a></li>
-								<li class="socialMediaIcons" id="linkedIn"><a href="https://www.linkedin.com/in/alexisnera" target="_blank"><img src="img/SocialMedia_LinkedIn_Icon.png" alt="Linkedin page link" target=""></a></li>
-								<li class="socialMediaIcons"><a href="https://www.instagram.com/gijanelex/" target="_blank"><img src="img/SocialMedia_Instagram_Icon.png" alt="Instagram page link"></a></li>
-								<li class="socialMediaIcons"><a href="https://twitter.com/Lexy_Chase" target="_blank"><img src="img/SocialMedia_Twitter_Icon.png" alt="Twitter page link"></a></li>
-							</ul>
-						</div>
-					</nav>
 
 					<!-- SVG scroll down indicator arrow -->
 					<div>
@@ -100,14 +109,15 @@
 				<!-- Portfolio sub-navigation -->
 				<nav>
 					<ul class="button-group filters-button-group">
-						<li><a href="#portfolio" class="button is-checked subNavItem" id="subNavItemAll">Show All</a></li>
-						<li><a href="#portfolio" class="button subNavItem" id="subNavItemAdvertising">Advertising</a></li>
-						<li><a href="#portfolio" class="button subNavItem" id="subNavItemBranding">Branding</a></li>
-						<li><a href="#portfolio" class="button subNavItem" id="subNavItemPackaging">Packaging</a></li>
-						<li><a href="#portfolio" class="button subNavItem" id="subNavItemPublication">Publication</a></li>
-						<li><a href="#portfolio" class="button subNavItem" id="subNavItemDigital">Digital</a></li>
-						<li><a href="#portfolio" class="button subNavItem" id="subNavItemWeb">Web</a></li>
-						<li><a href="#portfolio" class="button subNavItem" id="subNavItemOoh">OOH</a></li>
+						<li class="wrapShowAll"><a href="#portfolio" class="button is-checked subNavItem" id="subNavItemAll">Show All</a></li>
+						<li class="wrapAdvertising"><a href="#portfolio" class="button subNavItem" id="subNavItemAdvertising">Advertising</a></li>
+						<li class="wrapBranding"><a href="#portfolio" class="button subNavItem" id="subNavItemBranding">Branding</a></li>
+						<li class="wrapPackaging"><a href="#portfolio" class="button subNavItem" id="subNavItemPackaging">Packaging</a></li>
+						<br class="hiddenBr1">
+						<li class="wrapPublication"><a href="#portfolio" class="button subNavItem" id="subNavItemPublication">Publication</a></li>
+						<li class="wrapDigital"><a href="#portfolio" class="button subNavItem" id="subNavItemDigital">Digital</a></li>
+						<li class="wrapWeb"><a href="#portfolio" class="button subNavItem" id="subNavItemWeb">Web</a></li>
+						<li class="wrapOoh"><a href="#portfolio" class="button subNavItem" id="subNavItemOoh">OOH</a></li>
 					</ul>
 					
 				</nav>
@@ -115,21 +125,41 @@
 			<!-- Portfolio entries / ISOTOPE -->
 			<div class="isotope">
 				<div class="portfolioEntries">
-					<div class="portfolioEntry entryOne advertising" id="entryOne"><a href="portfolio/portfolio.html" id="entryOneA"></a></div>
-					<div class="portfolioEntry entryTwo advertising branding packaging publication digital web ooh" id="entryTwo"><a href="portfolio/portfolio.html" id="entryTwoA"></a></div>
-					<div class="portfolioEntry entryThree advertising ooh" id="entryThree"><a href="portfolio/portfolio.html" id="entryThreeA"></a></div>
-					<div class="portfolioEntry entryFour advertising packaging publication" id="entryFour"><a href="portfolio/portfolio.html" id="entryFourA"></a></div>
-					<div class="portfolioEntry entryFive advertising branding packaging" id="entryFive"><a href="portfolio/portfolio.html" id="entryFiveA"></a></div>
-					<div class="portfolioEntry entrySix advertising branding ooh" id="entrySix"><a href="portfolio/portfolio.html" id="entrySixA"></a></div>
-					<div class="portfolioEntry entrySeven advertising web digital" id="entrySeven"><a href="portfolio/portfolio.html" id="entrySevenA"></a></div>
-					<div class="portfolioEntry entryEight branding digital" id="entryEight"><a href="portfolio/portfolio.html" id="entryEightA"></a></div>
-					<div class="portfolioEntry entryNine web digital" id="entryNine"><a href="portfolio/portfolio.html" id="entryNineA"></a></div>
-					<div class="portfolioEntry entryTen branding packaging advertising publication" id="entryTen"><a href="portfolio/portfolio.html" id="entryTenA"></a></div>
-					<div class="portfolioEntry entryEleven advertising branding packaging publication digital ooh" id="entryEleven"><a href="portfolio/portfolio.html" id="entryElevenA"></a></div>
-					<div class="portfolioEntry entryTwelve advertising ooh digital" id="entryTwelve"><a href="portfolio/portfolio.html" id="entryTwelveA"></a></div>
-					<div class="portfolioEntry entryThirteen advertising branding packaging web digital" id="entryThirteen"><a href="portfolio/portfolio.html" id="entryThirteenA"></a></div>
-					<div class="portfolioEntry entryFourteen advertising packaging" id="entryFourteen"><a href="portfolio/portfolio.html" id="entryFourteenA"></a></div>
-					<div class="portfolioEntry entryFifteen branding digital" id="entryFifteen"><a href="portfolio/portfolio.html" id="entryFifteenA"></a></div>
+
+					<div class="portfolioEntry entryOne advertising" id="entryOne"><a href="portfolio/avon.html" id="entryOneA"></a></div>
+
+					<div class="portfolioEntry entryTwo advertising branding packaging publication digital web ooh" id="entryTwo"><a href="portfolio/ivi.html" id="entryTwoA"></a></div>
+
+					<div class="portfolioEntry entryThree advertising ooh" id="entryThree"><a href="portfolio/dell.html" id="entryThreeA"></a></div>
+
+					<div class="portfolioEntry entryFour advertising packaging publication" id="entryFour"><a href="portfolio/hsbcdirectmailer.html" id="entryFourA"></a></div>
+
+					<div class="portfolioEntry entryFive advertising branding packaging" id="entryFive"><a href="portfolio/sharekisses.html" id="entryFiveA"></a></div>
+
+					<div class="portfolioEntry entrySix advertising branding ooh" id="entrySix"><a href="portfolio/sm.html" id="entrySixA"></a></div>
+
+					<div class="portfolioEntry entrySeven advertising web digital" id="entrySeven"><a href="portfolio/leejeanscitychase.html" id="entrySevenA"></a></div>
+
+					<div class="portfolioEntry entryEight branding digital" id="entryEight"><a href="portfolio/stefgonzaga.html" id="entryEightA"></a></div>
+
+					<div class="portfolioEntry entryNine web digital" id="entryNine"><a href="portfolio/paperkarma.html" id="entryNineA"></a></div>
+
+					<div class="portfolioEntry entryTen branding packaging advertising publication" id="entryTen"><a href="portfolio/dundee.html" id="entryTenA"></a></div>
+
+					<div class="portfolioEntry entryEleven advertising branding packaging publication digital ooh" id="entryEleven"><a href="portfolio/yishion.html" id="entryElevenA"></a></div>
+
+					<div class="portfolioEntry entryTwelve advertising ooh digital" id="entryTwelve"><a href="portfolio/hsbctravel.html" id="entryTwelveA"></a></div>
+
+					<div class="portfolioEntry entryThirteen advertising branding packaging web digital" id="entryThirteen"><a href="unilab/portfolio.html" id="entryThirteenA"></a></div>
+
+					<div class="portfolioEntry entryFourteen advertising packaging" id="entryFourteen"><a href="portfolio/wacoal.html" id="entryFourteenA"></a></div>
+
+					<div class="portfolioEntry entryFifteen branding digital" id="entryFifteen"><a href="portfolio/upssaa.html" id="entryFifteenA"></a></div>
+
+					<div class="portfolioEntry entrySixteen branding digital" id="entrySixteen"><a href="portfolio/wyeth.html" id="entrySixteenA"></a></div>
+
+					<div class="portfolioEntry entrySeventeen web digital" id="entrySeventeen"><a href="portfolio/cftc.html" id="entrySeventeenA"></a></div>
+
 				</div>
 			</div>
 			
@@ -140,7 +170,7 @@
 			<div class="aboutHeroWrapper">
 				<h2>Getting to know Lexy</h2>
 				<div class="aboutHeroImage">
-					<img src="img/Alexis_Nera.jpg">
+					<img src="img/Alexis_Nera.jpg" alt="Alexis Nera">
 				</div>
 			</div>
 		</article>
@@ -181,8 +211,9 @@
 				<!-- Contact Info -->
 				<div class="contactInfo">
 					<h3>Alexis Nera</h3>
-					<p>1600 S Joyce Street, Suite 1128<br>Arlington VA 22202</p>
-					<p>201 E 25th Street, Suite 10C<br>New York NY 10010</p>
+					<p>1600 S Joyce Street, Suite 427<br>Arlington VA USA 22202</p>
+					<p>201 E 25th Street, Suite 10C<br>New York NY USA 10010</p>
+					<p>42 Roseville Street, White Plains<br>Quezon City, NCR, Philippines 1110</p>
 					<p>lexy@alexisnera.com</p>
 				</div>
 				<!-- Contact Form -->
@@ -193,7 +224,6 @@
 						<li id="foli115" class="notranslate      ">
 							<label class="desc" id="title115" for="Field115">
 								Name
-								<!-- <span id="req_110" class="req">*</span> -->
 							</label>
 							<div>
 								<input id="Field115" name="Field115" type="text" class="field text large" value="" maxlength="255" tabindex="1" required />
@@ -202,7 +232,6 @@
 						<li id="foli3" class="notranslate      ">
 							<label class="desc" id="title3" for="Field3">
 								Email
-								<!-- <span id="req_3" class="req">*</span> -->
 							</label>
 							<div>
 								<input id="Field3" name="Field3" type="email" spellcheck="false" class="field text large" value="" maxlength="255" tabindex="3"       required />
@@ -221,7 +250,6 @@
 						<li id="foli113" class="notranslate      ">
 							<label class="desc" id="title113" for="Field113">
 								Message
-								<!-- <span id="req_113" class="req">*</span> -->
 							</label>
 							<div>
 								<textarea id="Field113" name="Field113" class="field textarea medium" spellcheck="true" rows="10" cols="50" tabindex="5" onkeyup="validateRange(113, 'character');" required></textarea>
@@ -234,6 +262,11 @@
 								<input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="SUBMIT" />
 							</div>
 						</li>
+						<li class="hide">
+							<label for="comment">Do Not Fill This Out</label>
+							<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+							<input type="hidden" id="idstamp" name="idstamp" value="el4HgbvcpGcftr0mc/Jvr5eXr27scHsatTG/w8Lk6C4=" />
+						</li>
 						</ul>
 					</form>
 				</div>
@@ -245,7 +278,7 @@
 			<nav>
 				<div class="footerNavWrap">
 					<ul>
-						<li class="footerMenuItem"><a href="#aboutHero">About</a></li>
+						<li class="footerMenuItem"><a href="#aboutme">About</a></li>
 						<li class="footerMenuItem"><a href="#portfolio">Portfolio</a></li>
 						<li class="footerMenuItem"><a href="#contact">Contact</a></li>
 					</ul>

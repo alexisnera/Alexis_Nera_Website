@@ -32,14 +32,6 @@ a {
 	display: none;
 }
 
-.socialMediaIcons {
-	width: 28px;
-	height: 28px;
-	float: right;
-	display: inline;
-	margin: 0 4px;
-}
-
 .mainSocialMediaIcons {
 	width: 28px;
 	height: 28px;
@@ -56,68 +48,6 @@ a {
 
 
 /* Header */
-
-	/* Initial Nav */
-	.initialNav {
-		width: 100%;
-		padding: 10px 0px;
-		position: absolute;
-		top: 70%;
-		background-color: #FFFFFF;
-		opacity: 0.6;
-		filter: alpha(opacity=60); /* For IE8 and earlier */
-	}
-
-	.initialNav:hover {
-		opacity: 0.8;
-		filter: alpha(opacity=80); /* For IE8 and earlier */
-	}
-
-	.initialNavWrapper {
-		width: 100%;
-		max-width: 1000px;
-		min-width: 768px;
-		margin: 0 auto;
-	}
-
-	.initialNav ul {
-		margin: 0;
-	}
-
-	.initialNavLogo {
-		width: 100%;
-		height: 100%;
-		max-width: 200px;
-		max-height: 26.7px;
-		margin-left: 20px;
-		padding-top: 2px;
-		float: left;
-		display: inline-block;
-	}
-
-	.initialMenuItem {
-		font-weight: 300;
-		font-size: 18px;
-		color: #000000;
-		padding: 0 1.5%;
-		display: inline;
-		float: left;
-		text-decoration: none;
-	}
-
-	.initialMenuItem a {
-		font-weight: 300;
-		font-size: 18px;
-		color: #000000;
-		padding: 0 1.5%;
-		display: inline;
-		float: left;
-		text-decoration: none;
-	}
-
-	.initialMenuItem:first-child {
-		margin-left: 3%;
-	}
 
 	/* Main Nav */
 	.mainNav {
@@ -176,7 +106,72 @@ a {
 		margin-right: 20px;
 	}
 
+	/* Hamburger menu */
+
+	.hamburger {
+		color: #000;
+		font-size: 32px;
+		cursor: pointer;
+		display: none;
+	}
+
+	.hamburgerMenu {
+		float: right;
+		padding-right: 20px;
+		margin: 0;
+		position: relative;
+		z-index: 2;
+		float: right;
+		display: none;
+	}
+
+	.mobileMenu {
+		display: none;
+		position: fixed;
+		top: 57px;
+	}
+
+	.mobileMenu ul li {
+		float: right;
+		clear: both;
+		font-size: 17px;
+		display: none;
+		width: 100%;
+		text-align: center;
+		padding: 12px 0;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+	.mobileMenu ul li a {
+		display: none;
+		color: #000;
+	}
+
+	.mobileMenu ul li:last-child {
+		display: block;
+		border-bottom: 0px;
+	}
+
+	.mobileMenu ul li.mobileSocialMediaIcons a {
+		width: 28px;
+		height: 28px;
+		display: inline;
+		margin: 0;
+		text-align: center;
+		padding: 0 5px;
+	}
+
 	/* Hero Section */
+	/* Hidden spacer */
+	.topSpacer {
+		width: 100%;
+		height: 75px;
+		background-color: #FFFFFF;
+		display: block;
+	}
+
+	/* IMG Carousel */
 	.imgCarousel {
 		width: 100%;
 		height: 100%;
@@ -199,7 +194,7 @@ a {
 		position: absolute;
 		left: 50%;
 		margin-left: -30px;
-		bottom: 50px;
+		bottom: 25px;
 	}
 
 	.arrowScrollDown path {
@@ -293,6 +288,10 @@ a {
 		margin-right: 0;
 	}
 
+	.hiddenBr1 {
+		display: none;
+	}
+
 	.portfolio .subNavItem {
 		width: 100%;
 		color: #000;
@@ -330,7 +329,7 @@ a {
 
 	.portfolioEntries {
 		width: 100%;
-		max-width: 980px;
+		max-width: 1440px;
 		height: 2500px;
 		margin: 0 auto;
 		padding: 0;
@@ -343,7 +342,7 @@ a {
 		width: 100%;
 		max-width: 480px;
 		height: 100%;
-		max-height: 267px;
+		max-height: 270px;
 		padding: 0;
 		margin: 0;
 		display: inline;
@@ -597,6 +596,38 @@ a {
 		background-image: url(../img/portfolio_feature/color/UPSSAA_Feature.jpg);
 	}
 	#entryFifteenA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
+
+	.entrySixteen {
+		background-image: url(../img/portfolio_feature/bw/BW_WYETH_Feature.jpg);
+	}
+	.entrySixteen:hover {
+		background-image: url(../img/portfolio_feature/color/WYETH_Feature.jpg);
+	}
+	#entrySixteenA {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		text-decoration: none;
+		outline: none;
+	}
+
+	.entrySeventeen {
+		background-image: url(../img/portfolio_feature/bw/BW_CFTC_Feature.jpg);
+	}
+	.entrySeventeen:hover {
+		background-image: url(../img/portfolio_feature/color/CFTC_Feature.jpg);
+	}
+	#entrySeventeenA {
 		position: absolute;
 		left: 0;
 		width: 100%;
@@ -861,18 +892,86 @@ footer .footerIconGroup {
 
 
 
-/* RESPONSIVE - MOBILE & LAPTOP */
 
-/* 782px to 800px wide */
+
+/*//////////////////////////////*/
+/* RESPONSIVE - MOBILE & LAPTOP */
+/*//////////////////////////////*/
+
+
+
+
+
+
+
+
+/* 1058px to 1650px wide */
+@media screen and (min-width: 1058px) and (max-width: 1650px) { 
+
+/* Portfolio Section */
+
+	/* ISOTOPE Entries */
+	.isotope {
+		padding-bottom: 60px;
+	}
+
+		/*clearfix*/
+		.isotope:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+	.portfolioEntries {
+		width: 100%;
+		max-width: 980px;
+		height: 2500px;
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.portfolioEntry {
+		position: relative;
+		width: 100%;
+		max-width: 480px;
+		height: 100%;
+		max-height: 270px;
+		padding: 0;
+		margin: 0;
+		display: inline;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: cover;
+		cursor: pointer;
+		text-align: center;
+		-o-transition: background .5s ease-in;
+  		-ms-transition: background .5s ease-in;
+  		-moz-transition: background .5s ease-in;
+  		-webkit-transition: background .5s ease-in;
+  		transition: background .5s ease-in;
+	}
+
+		.portfolioEntry > * {
+			margin: 0;
+			padding: 0;
+		}
+
+
+}
+
+
+
+
+
+
+
+
+/* 920px to 1057px wide */
 @media screen and (min-width: 920px) and (max-width: 1057px) {
 
 /* Header */
-
-	/* Initial Nav - Adjusting min-width to 320px and max-width to 1057px */
-	.initialNavWrapper {
-		max-width: 1057px;
-		min-width: 320px;
-	}
 
 	/* Main Nav - Adjusting min-width to 320px and max-width to 1057px */
 	.mainNavWrapper {
@@ -885,18 +984,84 @@ footer .footerIconGroup {
 		bottom: 5px;
 	}
 
+/* Portfolio Section */
+
+	/* Increased padding to 5.5% for subnav items */
+	.portfolio li {
+		padding: 0 6.5%;
+	}
+
+		/* Subnav breaks made visible */
+		.hiddenBr1 {
+			display: block;
+		}
+
+		/* Added subnav custom padding and margins */
+		li.wrapPublication {
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+	/* ISOTOPE Entries */
+
+	/* Change max-width to 906px */
+	.portfolioEntries {
+		width: 100%;
+		max-width: 906px;
+		height: 2500px;
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+	}
+
+	/* Change max-width to 453px */
+	.portfolioEntry {
+		max-width: 453px;
+		max-height: 255px;
+	}
+
+
+/* About */
+.aboutWrapper {
+	max-width: 1000px;
+	min-width: 320px;
 }
 
-/* 782px to 800px wide */
+	.aboutSubheadWrapper {
+		width: 100%;
+		max-width: 960px;
+		min-width: 320px;
+		display: block;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+
+	.aboutSubHead {
+		width: 100%;
+		max-width: 960px;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 1.5px;
+		border-top: 1px solid #DEDEDE;
+		padding-top: 20px;
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+
+}
+
+
+
+
+
+
+
+
+/* 780px to 919px wide */
 @media screen and (min-width: 780px) and (max-width: 919px) {
 
 /* Header */
-
-	/* Initial Nav - Adjusting min-width to 320px and max-width to 1057px */
-	.initialNavWrapper {
-		max-width: 920px;
-		min-width: 320px;
-	}
 
 	/* Main Nav - Adjusting min-width to 320px and max-width to 1057px */
 	.mainNavWrapper {
@@ -904,12 +1069,60 @@ footer .footerIconGroup {
 		min-width: 320px;
 	}
 
-	/* SVG scroll down indicator arrow moved to 5px from bottom */
+	/* SVG scroll down indicator arrow hidden */
 	.arrowScrollDown {
 		display: none;
 	}
 
-/* ABOUT */
+/* Portfolio Section */
+.portfolioWrapper {
+	width: 100%;
+	max-width: 919px;
+	margin: 0 auto;
+}
+
+	/* Subnav */
+	/* Increased padding to 5.5% for subnav items */
+	.portfolio li {
+		padding: 0 6.5%;
+	}
+
+		/* Subnav breaks made visible */
+		.hiddenBr1 {
+			display: block;
+		}
+
+		/* Added subnav custom padding and margins */
+		li.wrapPublication {
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+	/* ISOTOPE Entries */
+
+	/* Change max-width to 780px */
+	.portfolioEntries {
+		width: 100%;
+		max-width: 780px;
+		height: 2500px;
+		margin: 0 auto;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+	}
+
+	/* Change max-width to 453px */
+	.portfolioEntry {
+		max-width: 382px;
+		max-height: 215px;
+	}
+
+
+/* About */
+.aboutWrapper {
+	max-width: 919px;
+	min-width: 320px;
+}
 
 	/* Description - Adjust to 2 columns */
 	.aboutDescription {
@@ -925,6 +1138,1186 @@ footer .footerIconGroup {
   		column-count: 2;
 	}
 
+
 }
+
+
+
+
+
+
+
+
+/* 650px to 779px wide */
+@media screen and (min-width: 650px) and (max-width: 779px) {
+
+/* Header */
+
+	/* Main Nav - Adjusting min-width to 320px and max-width to 779px */
+	.mainNavWrapper {
+		max-width: 779px;
+		min-width: 320px;
+	}
+
+	/* SVG scroll down indicator hidden */
+	.arrowScrollDown {
+		display: none;
+	}
+
+/* Portfolio Section */
+.portfolioWrapper {
+	width: 100%;
+	max-width: 779px;
+	margin: 0 auto;
+}
+
+.portfolio nav {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+	/* Subnav */
+	/* Increased padding to 6% for subnav items */
+	.portfolio li {
+		padding: 0 6%;
+	}
+
+		/* Subnav breaks made visible */
+		.hiddenBr1 {
+			display: block;
+		}
+
+		/* Added subnav custom padding and margins */
+		li.wrapPublication {
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+	/* ISOTOPE Entries */
+
+	/* Change max-width to 650px */
+	.portfolioEntries {
+		max-width: 650px;
+	}
+
+	/* Change max-width to 317px and max-height to 190px */
+	.portfolioEntry {
+		max-width: 317px;
+		max-height: 190px;
+	}
+
+
+/* About */
+.aboutHeroWrapper {
+	max-width: 779px;
+}
+
+.aboutWrapper {
+	max-width: 779px;
+	min-width: 320px;
+}
+
+.aboutWrapper {
+	max-width: 779px;
+	min-width: 320px;
+	color: #7e7e7e;
+}
+
+	/* Description - Adjust to 2 columns */
+	.aboutDescription {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+  		column-count: 2;
+	}
+	/* Accounts - Adjust to 2 columns */
+
+	.accountsList {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+  		column-count: 2;
+	}
+
+
+/* Contact */
+.contactWrapper {
+	max-width: 779px;
+}
+
+	/* Contact Form */
+	.wufooContactFormWrap {
+		max-width: 500px;
+		min-width: 320px;
+		display: block;
+		float: left;
+	}
+
+}
+
+
+
+
+
+
+
+
+/* 610px to 649px wide */
+@media screen and (min-width: 610px) and (max-width: 649px) {
+
+/* Header */
+
+	/* Main Nav */
+	.mainNav {
+		width: 100%;
+		background-color: #FFFFFF;
+		float: left;
+		padding: 15px 0px 15px 0;
+		position: fixed;
+		z-index: 10000;
+		-o-transition: background .5s ease-in;
+  		-ms-transition: background .5s ease-in;
+  		-moz-transition: background .5s ease-in;
+  		-webkit-transition: background .5s ease-in;
+  		transition: background .5s ease-in;
+	}
+
+	.mainNavWrapper {
+		width: 100%;
+		max-width: 649px;
+		min-width: 550px;
+		margin: 0 auto;
+	}
+
+	.mainNavLogo {
+		width: 100%;
+		max-width: 200px;
+		margin-left: 20px;
+		float: left;
+		display: inline-block;
+	}
+
+	.mainNav ul {
+		padding: 0 0;
+	}
+
+	.mainMenuItem {
+		font-weight: 300;
+		font-size: 18px;
+		color: #000000;
+		padding: 14px 1.5%;
+		display: inline;
+		float: left;
+	}
+
+	.mainMenuItem a {
+		font-weight: 300;
+		font-size: 18px;
+		color: #000000;
+	}
+
+	.mainMenuItem:first-child {
+		margin-left: 3%;
+	}
+
+	#linkedIn {
+		margin-right: 20px;
+	}
+
+	.mainSocialMediaIcons {
+		display: inline-block;
+	}
+
+		/* Hamburger menu appear */
+
+		.hamburger {
+		  color: #000;
+		  font-size: 32px;
+		  cursor: pointer;
+		}
+
+		.hamburgerMenu {
+		  float: right;
+		  padding-right: 20px;
+		  margin: 0;
+		  position: relative;
+		  z-index: 10000;
+		  float: right;
+		  display: none;
+		}
+
+		.mobileMenu {
+		  display: block;
+		  position: fixed;
+		  top: 57px;
+		  z-index: 1;
+		}
+
+		.mobileMenu ul li {
+		  float: right;
+		  clear: both;
+		  font-size: 17px;
+		  display: block;
+		  width: 100%;
+		  text-align: center;
+		  padding: 8px 0;
+		  cursor: pointer;
+		  z-index: 1;
+		}
+
+		.mobileMenu ul li a {
+		  display: block;
+		  color: #000;
+		}
+
+		.mobileMenu ul li:last-child {
+		  display: block;
+		  border-bottom: 0px;
+		}
+
+	/* Hero Section */
+	/* Hidden spacer */
+	.topSpacer {
+		width: 100%;
+		height: 57px;
+		background-color: #FFFFFF;
+		display: block;
+		z-index: 1;
+	}
+
+	/* SVG scroll down indicator hidden */
+	.arrowScrollDown {
+		display: none;
+	}
+
+/* Portfolio Section */
+/* Change padding top and bottom to 80px 	*/
+.portfolio {
+	padding: 80px 0;
+}
+
+.portfolioWrapper {
+	width: 100%;
+	max-width: 549px;
+	margin: 0 auto;
+}
+
+.portfolio nav {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+	/* Subnav */
+	/* Increased padding to 5% for subnav items */
+	.portfolio li {
+		padding: 0 5%;
+	}
+
+		/* Subnav breaks made visible */
+		.hiddenBr1 {
+			display: block;
+		}
+
+		/* Added subnav custom padding and margins */
+		li.wrapPublication {
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+	/* ISOTOPE Entries */
+
+	/* Change max-width to 549px */
+	.portfolioEntries {
+		max-width: 549px;
+	}
+
+	/* Change max-width to 274px and max-height to 160px */
+	.portfolioEntry {
+		max-width: 267px;
+		max-height: 160px;
+	}
+
+
+/* About */
+.aboutHeroWrapper {
+	max-width: 549px;
+}
+
+.aboutWrapper {
+	max-width: 549px;
+	min-width: 320px;
+}
+
+.aboutWrapper {
+	max-width: 549px;
+	min-width: 320px;
+	color: #7e7e7e;
+}
+
+	/* Description - Adjust to 2 columns */
+	.aboutDescription {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+  		column-count: 2;
+	}
+
+	.aboutDescription p {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	/* Accounts - Adjust to 2 columns */
+
+	.accountsList {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+  		column-count: 2;
+	}
+
+	.accountsList li {
+		font-size: 15px;
+	}
+
+
+/* Contact */
+.contact {
+	background-color: #e7e7e7;
+	padding: 50px 0px;
+}
+
+.contactWrapper {
+	max-width: 549px;
+}
+
+.contact h2 {
+	color: #000;
+	font-weight: 300;
+	font-size: 35px;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+.contact h3 {
+	color: #000;
+	font-weight: 300;
+	font-size: 25px;
+	padding: 10px 0px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+	/* Contact Form */
+	.wufooContactFormWrap {
+		max-width: 549px;
+		min-width: 320px;
+		display: block;
+		float: left;
+	}
+
+/* Footer */
+/* Changed padding */
+.footerNavWrap {
+	width: 100%;
+	max-width: 300px;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+}
+
+
+
+
+
+
+
+
+/* 550px to 609px wide */
+@media screen and (min-width: 550px) and (max-width: 609px) {
+
+/* Header */
+
+	/* Main Nav */
+	.mainNav {
+		width: 100%;
+		background-color: #FFFFFF;
+		float: left;
+		padding: 15px 0px 15px 0;
+		position: fixed;
+		z-index: 10000;
+		-o-transition: background .5s ease-in;
+  		-ms-transition: background .5s ease-in;
+  		-moz-transition: background .5s ease-in;
+  		-webkit-transition: background .5s ease-in;
+  		transition: background .5s ease-in;
+	}
+
+	/* Change max-width to 180px */
+	.mainNavLogo {
+		max-width: 180px;
+	}
+
+	.mainNavWrapper {
+		width: 100%;
+		max-width: 649px;
+		min-width: 550px;
+		margin: 0 auto;
+	}
+
+	.mainMenuItem {
+		display: none;
+	}
+
+	.mainSocialMediaIcons {
+		display: none;
+	}
+
+		/* Hamburger menu appear */
+
+		.hamburger {
+		  color: #000;
+		  font-size: 32px;
+		  cursor: pointer;
+		}
+
+		.hamburgerMenu {
+		  float: right;
+		  padding-right: 20px;
+		  margin: 0;
+		  position: relative;
+		  z-index: 2;
+		  float: right;
+		  display: inline-block;
+		}
+
+		.mobileMenu {
+		  display: block;
+		  position: fixed;
+		  top: 57px;
+		}
+
+		.mobileMenu ul li {
+		  float: right;
+		  clear: both;
+		  font-size: 17px;
+		  display: block;
+		  width: 100%;
+		  text-align: center;
+		  padding: 8px 0;
+		  cursor: pointer;
+		  z-index: 1;
+		}
+
+		.mobileMenu ul li a {
+		  display: block;
+		  color: #000;
+		}
+
+		.mobileMenu ul li:last-child {
+		  display: block;
+		  border-bottom: 0px;
+		}
+
+	/* Hero Section */
+	/* Hidden spacer */
+	.topSpacer {
+		width: 100%;
+		height: 57px;
+		background-color: #FFFFFF;
+		display: block;
+	}
+
+	/* SVG scroll down indicator hidden */
+	.arrowScrollDown {
+		display: none;
+	}
+
+/* Portfolio Section */
+/* Change padding top and bottom to 80px 	*/
+.portfolio {
+	padding: 80px 0;
+}
+
+.portfolioWrapper {
+	width: 100%;
+	max-width: 549px;
+	margin: 0 auto;
+}
+
+.portfolio nav {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+	/* Subnav */
+	/* Increased padding to 5% for subnav items */
+	.portfolio li {
+		padding: 0 5%;
+	}
+
+		/* Subnav breaks made visible */
+		.hiddenBr1 {
+			display: block;
+		}
+
+		/* Added subnav custom padding and margins */
+		li.wrapPublication {
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+	/* ISOTOPE Entries */
+
+	/* Change max-width to 549px */
+	.portfolioEntries {
+		max-width: 549px;
+	}
+
+	/* Change max-width to 274px and max-height to 160px */
+	.portfolioEntry {
+		max-width: 267px;
+		max-height: 160px;
+	}
+
+
+/* About */
+.aboutHeroWrapper {
+	max-width: 549px;
+}
+
+.aboutWrapper {
+	max-width: 549px;
+	min-width: 320px;
+}
+
+.aboutWrapper {
+	max-width: 549px;
+	min-width: 320px;
+	color: #7e7e7e;
+}
+
+	/* Description - Adjust to 2 columns */
+	.aboutDescription {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+  		column-count: 2;
+	}
+
+	.aboutDescription p {
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 24px;
+	}
+
+	/* Accounts - Adjust to 2 columns */
+
+	.accountsList {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+  		column-count: 2;
+	}
+
+	.accountsList li {
+		font-size: 15px;
+	}
+
+
+/* Contact */
+.contact {
+	background-color: #e7e7e7;
+	padding: 50px 0px;
+}
+
+.contactWrapper {
+	max-width: 549px;
+}
+
+.contact h2 {
+	color: #000;
+	font-weight: 300;
+	font-size: 35px;
+	padding-top: 30px;
+	padding-bottom: 25px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+.contact h3 {
+	color: #000;
+	font-weight: 300;
+	font-size: 25px;
+	padding: 10px 0px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+	/* Contact Form */
+	.wufooContactFormWrap {
+		max-width: 549px;
+		min-width: 320px;
+		display: block;
+		float: left;
+	}
+
+/* Footer */
+/* Changed padding */
+.footerNavWrap {
+	width: 100%;
+	max-width: 300px;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+}
+
+
+
+
+
+
+
+
+/* 440px to 549px wide */
+@media screen  and (min-width: 440px) and (max-width: 549px) {
+
+/* Header */
+
+	/* Main Nav */
+	.mainNav {
+		padding: 10px 0px 8px 0;
+	}
+
+	.mainNavWrapper {
+		max-width: 549px;
+		min-width: 320px;
+	}
+
+		/* Change max-width to 180px */
+		.mainNavLogo {
+			max-width: 180px;
+		}
+		/* Hide regular main menu item*/
+		.mainMenuItem {
+			display: none;
+		}
+
+		/* Hide regular main menu social media icons */
+		.mainSocialMediaIcons {
+			display: none;
+		}
+
+		/* Hamburger menu appear */
+
+		.hamburger {
+		  color: #000;
+		  font-size: 32px;
+		  cursor: pointer;
+		}
+
+		.hamburgerMenu {
+		  float: right;
+		  padding-right: 20px;
+		  margin: 0;
+		  position: relative;
+		  z-index: 2;
+		  float: right;
+		  display: inline;
+		}
+
+		.mobileMenu {
+		  display: block;
+		  position: fixed;
+		  top: 57px;
+		}
+
+		.mobileMenu ul li {
+		  float: right;
+		  clear: both;
+		  font-size: 17px;
+		  display: block;
+		  width: 100%;
+		  text-align: center;
+		  padding: 8px 0;
+		  cursor: pointer;
+		  z-index: 1;
+		}
+
+		.mobileMenu ul li a {
+		  display: block;
+		  color: #000;
+		}
+
+		.mobileMenu ul li:last-child {
+		  display: block;
+		  border-bottom: 0px;
+		}
+
+	/* Hero Section */
+	/* Hidden spacer display */
+	.topSpacer {
+		width: 100%;
+		height: 57px;
+		background-color: #FFFFFF;
+		display: block;
+	}
+
+	/* SVG scroll down indicator hidden */
+	.arrowScrollDown {
+		display: none;
+	}
+
+/* Portfolio Section */
+/* Change padding top and bottom to 80px */
+.portfolio {
+	padding: 80px 0;
+}
+
+.portfolioWrapper {
+	width: 100%;
+	max-width: 549px;
+	margin: 0 auto;
+}
+
+.portfolio nav {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.portfolio h2 {
+	color: #000;
+	font-weight: 300;
+	font-size: 28px;
+	margin-left: 20px;
+}
+
+	/* Subnav */
+	/* Increased padding to 5% for subnav items */
+	.portfolio li {
+		padding: 0 5%;
+	}
+
+		/* Subnav breaks made visible */
+		.hiddenBr1 {
+			display: block;
+		}
+
+		.portfolio .subNavItem {
+			font-size: 15px;
+			line-height: 45px;
+			padding-bottom: 5px;
+		}
+
+		/* Added subnav custom padding and margins */
+		li.wrapPublication {
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+	/* ISOTOPE Entries */
+
+	/* Change max-width to 400px */
+	.portfolioEntries {
+		max-width: 400px;
+	}
+
+	/* Change max-width to 400px and max-height to 225px */
+	.portfolioEntry {
+		max-width: 400px;
+		max-height: 225px;
+	}
+
+
+/* About */
+.aboutHeroWrapper {
+	max-width: 549px;
+}
+
+.aboutWrapper {
+	max-width: 549px;
+	min-width: 320px;
+}
+
+.aboutWrapper {
+	max-width: 549px;
+	min-width: 320px;
+	color: #7e7e7e;
+}
+
+	/* About hero section */
+	.aboutHero h2 {
+		color: #FFFFFF;
+		font-weight: 300;
+		font-size: 28px;
+		padding: 80px 0px 40px 0;
+		position: relative;
+		top: 30px;
+		margin: 0 20px;
+	}
+
+	/* Description - Adjust to 2 columns */
+	.aboutDescription {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+  		column-count: 1;
+	}
+
+	.aboutDescription p {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	/* Accounts - Adjust to 2 columns */
+
+	.accountsList {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+  		column-count: 1;
+	}
+
+	.accountsList li {
+		font-size: 18px;
+	}
+
+
+/* Contact */
+.contact {
+	background-color: #e7e7e7;
+	padding: 50px 0px;
+}
+
+.contactWrapper {
+	max-width: 549px;
+}
+
+.contact h2 {
+	color: #000;
+	font-weight: 300;
+	font-size: 28px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+.contact h3 {
+	color: #000;
+	font-weight: 300;
+	font-size: 20px;
+	padding: 10px 0px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+	/* Contact Info */
+	.contactInfo {
+		max-width: 100%;
+		margin-right: 20px;
+	}
+
+	.contact p {
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	/* Contact Form */
+	.wufooContactFormWrap {
+		max-width: 420px;
+		min-width: 320px;
+		display: block;
+		float: left;
+	}
+
+/* Footer */
+/* Changed padding */
+.footerNavWrap {
+	width: 100%;
+	max-width: 300px;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+
+}
+
+
+
+
+
+
+
+
+/* 320px to 549px wide */
+@media screen and (max-width: 439px) {
+
+/* Header */
+
+	/* Main Nav - Adjusting min-width to 320px and max-width to 779px */
+	.mainNav {
+		padding: 10px 0px 8px 0;
+	}
+
+	.mainNavWrapper {
+		max-width: 549px;
+		min-width: 320px;
+	}
+
+		/* Change max-width to 180px */
+		.mainNavLogo {
+			max-width: 180px;
+		}
+		/* Change padding top and bottom to 8px */
+		.mainMenuItem {
+			display: none;
+		}
+
+		/* Add more margin to the left of first menu item */
+		.mainMenuItem:first-child {
+			margin-left: 18%;
+		}
+
+		/* Hide main menu social media icons */
+		.mainSocialMediaIcons {
+			display: none;
+		}
+
+		/* Hamburger menu appear */
+
+		.hamburger {
+		  color: #000;
+		  font-size: 32px;
+		  cursor: pointer;
+		}
+
+		.hamburgerMenu {
+		  float: right;
+		  padding-right: 20px;
+		  margin: 0;
+		  position: relative;
+		  z-index: 2;
+		  float: right;
+		  display: inline;
+		}
+
+		.mobileMenu {
+		  display: block;
+		  position: fixed;
+		  top: 57px;
+		}
+
+		.mobileMenu ul li {
+		  float: right;
+		  clear: both;
+		  font-size: 17px;
+		  display: block;
+		  width: 100%;
+		  text-align: center;
+		  padding: 8px 0;
+		  cursor: pointer;
+		  z-index: 1;
+		}
+
+		.mobileMenu ul li a {
+		  display: block;
+		  color: #000;
+		}
+
+		.mobileMenu ul li:last-child {
+		  display: block;
+		  border-bottom: 0px;
+		}
+
+	/* Hero Section */
+	/* Hidden spacer */
+	.topSpacer {
+		width: 100%;
+		height: 57px;
+		background-color: #FFFFFF;
+		display: block;
+	}
+
+	/* SVG scroll down indicator hidden */
+	.arrowScrollDown {
+		display: none;
+	}
+
+/* Portfolio Section */
+/* Change padding top and bottom to 80px */
+.portfolio {
+	padding: 80px 0;
+}
+
+.portfolioWrapper {
+	width: 100%;
+	max-width: 549px;
+	margin: 0 auto;
+}
+
+.portfolio nav {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.portfolio h2 {
+	color: #000;
+	font-weight: 300;
+	font-size: 28px;
+	margin-left: 20px;
+}
+
+	/* Subnav */
+	/* Increased padding to 5% for subnav items */
+	.portfolio li {
+		padding: 0 3%;
+	}
+
+		/* Subnav breaks made visible */
+		.hiddenBr1 {
+			display: block;
+		}
+
+		.portfolio .subNavItem {
+			font-size: 15px;
+			line-height: 45px;
+			padding-bottom: 5px;
+		}
+
+		/* Added subnav custom padding and margins */
+		li.wrapPublication {
+			padding-left: 0;
+			margin-left: 0;
+		}
+
+	/* ISOTOPE Entries */
+
+	/* Change max-width to 549px */
+	.portfolioEntries {
+		max-width: 300px;
+	}
+
+	/* Change max-width to 274px and max-height to 160px */
+	.portfolioEntry {
+		max-width: 300px;
+		max-height: 170px;
+	}
+
+
+/* About */
+.aboutHeroWrapper {
+	max-width: 549px;
+}
+
+.aboutWrapper {
+	max-width: 549px;
+	min-width: 320px;
+}
+
+.aboutWrapper {
+	max-width: 549px;
+	min-width: 320px;
+	color: #7e7e7e;
+}
+
+	/* About hero section */
+	.aboutHero h2 {
+		color: #FFFFFF;
+		font-weight: 300;
+		font-size: 28px;
+		padding: 80px 0px 40px 0;
+		position: relative;
+		top: 30px;
+		margin: 0 20px;
+	}
+
+	/* Description - Adjust to 2 columns */
+	.aboutDescription {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+  		column-count: 1;
+	}
+
+	.aboutDescription p {
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	/* Accounts - Adjust to 2 columns */
+
+	.accountsList {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+  		column-count: 1;
+	}
+
+	.accountsList li {
+		font-size: 18px;
+	}
+
+
+/* Contact */
+.contact {
+	background-color: #e7e7e7;
+	padding: 50px 0px;
+}
+
+.contactWrapper {
+	max-width: 549px;
+}
+
+.contact h2 {
+	color: #000;
+	font-weight: 300;
+	font-size: 28px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-left: 20px;
+	text-align: left;
+}
+
+.contact h3 {
+	color: #000;
+	font-weight: 300;
+	font-size: 20px;
+	padding: 10px 0px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+	/* Contact Info */
+	.contactInfo {
+		max-width: 100%;
+		margin-right: 20px;
+	}
+
+	.contact p {
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	/* Contact Form */
+	.wufooContactFormWrap {
+		max-width: 420px;
+		min-width: 320px;
+		display: block;
+		float: left;
+	}
+
+/* Footer */
+/* Changed padding */
+.footerNavWrap {
+	width: 100%;
+	max-width: 300px;
+	padding: 10px 0;
+	margin: 0 auto;
+}
+
+
+}
+
+
+
+
 
 
